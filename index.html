@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Simple JavaScript Quiz (ES6) V4 (Stylized)</title>
-  
-  
-  
-      <link rel="stylesheet" href="assets/css/style.css">
-
-  
+<title>Trivia Game</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
-  <h1>Quiz on Important Facts</h1>
-<div class="quiz-container">
-  <div id="quiz"></div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12"><br></div>
+	</div>
+
+	<div class="row">
+		<div class="jumbotron maincontent">
+			<h1 style="text-align:center;">Geography <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Trivia</h1>
+			<p style="text-align:center;">You have one minute to complete the quiz.</p>
+			<div id="done">
+				<div id="timer" style="text-align:center;">
+					<a class="btn btn-primary start" id="timer" href="#" role="button">Get Started</a>
+				</div>
+
+				<div class="row" id="question">
+					<form id="question"></form>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-<button id="previous">Previous Question</button>
-<button id="next">Next Question</button>
-<button id="submit">Submit Quiz</button>
-<div id="results"></div>
-  
-    <script src="assets/javascript/app.js"></script>
+
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
 </html>
